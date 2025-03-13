@@ -1,2 +1,2 @@
-# csci2204
+# csci3172
 Lab Project

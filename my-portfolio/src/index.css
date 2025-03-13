@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f5f5;
+  --accent-color: #ff6584;
+  --text-color: #333;
+  --light-text: #767676;
+  --background-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Section styling */
+.section-title {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+/* Card styling */
+.custom-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.custom-btn {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #5a52e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accessibility focus states */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
